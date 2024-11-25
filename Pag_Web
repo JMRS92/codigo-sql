@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Empleados</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>País</th>
+                <th>Oficina</th>
+                <th>Supervisor</th>
+                <th>Empleado</th>
+                <th>Hora Entrada</th>
+                <th>Hora Salida</th>
+                <th>Horario Laboral</th>
+                <th>Usuario Windows</th>
+                <th>Fecha Inicio Formación</th>
+                <th>Fecha Fin Formación</th>
+                <th>Fecha Inicio Contrato</th>
+                <th>Fecha Fin Contrato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán los registros de los empleados -->
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Empleado</title>
+</head>
+<body>
+    <h1>Agregar Nuevo Empleado</h1>
+    <form action="submit_employee.php" method="POST">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required><br>
+
+        <label for="oficina">Oficina:</label>
+        <input type="text" id="oficina" name="oficina" required><br>
+
+        <label for="supervisor">Supervisor:</label>
+        <input type="text" id="supervisor" name="supervisor" required><br>
+
+        <label for="empleado">Empleado:</label>
+        <input type="text" id="empleado" name="empleado" required><br>
+
+        <label for="hora_entrada">Hora Entrada:</label>
+        <input type="time" id="hora_entrada" name="hora_entrada" required><br>
+
+        <label for="hora_salida">Hora Salida:</label>
+        <input type="time" id="hora_salida" name="hora_salida" required><br>
+
+        <label for="horario_laboral">Horario Laboral:</label>
+        <input type="text" id="horario_laboral" name="horario_laboral" required><br>
+
+        <label for="usuario_windows">Usuario Windows:</label>
+        <input type="text" id="usuario_windows" name="usuario_windows" required><br>
+
+        <label for="fecha_inicio_formacion">Fecha Inicio Formación:</label>
+        <input type="date" id="fecha_inicio_formacion" name="fecha_inicio_formacion" required><br>
+
+        <label for="fecha_fin_formacion">Fecha Fin Formación:</label>
+        <input type="date" id="fecha_fin_formacion" name="fecha_fin_formacion" required><br>
+
+        <label for="fecha_inicio_contrato">Fecha Inicio Contrato:</label>
+        <input type="date" id="fecha_inicio_contrato" name="fecha_inicio_contrato" required><br>
+
+        <label for="fecha_fin_contrato">Fecha Fin Contrato:</label>
+        <input type="date" id="fecha_fin_contrato" name="fecha_fin_contrato" required><br>
+
+        <input type="submit" value="Agregar Empleado">
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Empleado</title>
+</head>
+<body>
+    <h1>Modificar Registro de Empleado</h1>
+    <form action="update_employee.php" method="POST">
+        <label for="id">ID del Empleado:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais"><br>
+
+        <label for="oficina">Oficina:</label>
+        <input type="text" id="oficina" name="oficina"><br>
+
+        <label for="supervisor">Supervisor:</label>
+        <input type="text" id="supervisor" name="supervisor"><br>
+
+        <label for="empleado">Empleado:</label>
+        <input type="text" id="empleado" name="empleado"><br>
+
+        <label for="hora_entrada">Hora Entrada:</label>
+        <input type="time" id="hora_entrada" name="hora_entrada"><br>
+
+        <label for="hora_salida">Hora Salida:</label>
+        <input type="time" id="hora_salida" name="hora_salida"><br>
+
+        <label for="horario_laboral">Horario Laboral:</label>
+        <input type="text" id="horario_laboral" name="horario_laboral"><br>
+
+        <label for="usuario_windows">Usuario Windows:</label>
+        <input type="text" id="usuario_windows" name="usuario_windows"><br>
+
+        <label for="fecha_inicio_formacion">Fecha Inicio Formación:</label>
+        <input type="date" id="fecha_inicio_formacion" name="fecha_inicio_formacion"><br>
+
+        <label for="fecha_fin_formacion">Fecha Fin Formación:</label>
+        <input type="date" id="fecha_fin_formacion" name="fecha_fin_formacion"><br>
+
+        <label for="fecha_inicio_contrato">Fecha Inicio Contrato:</label>
+        <input type="date" id="fecha_inicio_contrato" name="fecha_inicio_contrato"><br>
+
+        <label for="fecha_fin_contrato">Fecha Fin Contrato:</label>
+        <input type="date" id="fecha_fin_contrato" name="fecha_fin_contrato"><br>
+
+        <input type="submit" value="Modificar Empleado">
+    </form>
+</body>
+</html>
